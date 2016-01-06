@@ -1,14 +1,16 @@
 source 'https://rubygems.org'
 
-gem 'rails',          '4.2.4'
-gem 'sass-rails',     '5.0.4'
-gem 'uglifier',       '2.7.2'
-gem 'coffee-rails',   '4.1.1'
-gem 'jquery-rails',   '4.0.5'
-gem 'turbolinks',     '2.5.3'
-gem 'jbuilder',       '2.3.2'
-gem 'sdoc',           '0.4.1', group: :doc
-gem 'bootstrap-sass', '3.3.6'
+gem 'rails',              '4.2.4'
+gem 'sass-rails',         '5.0.4'
+gem 'uglifier',           '2.7.2'
+gem 'coffee-rails',       '4.1.1'
+gem 'jquery-rails',       '4.0.5'
+gem 'turbolinks',         '2.5.3'
+gem 'jbuilder',           '2.3.2'
+gem 'sdoc',               '0.4.1', group: :doc
+gem 'bootstrap-sass',     '3.3.6'
+gem 'font-awesome-rails', '4.5.0'
+gem 'simple_form',        '3.2.1'
 
 group :development do
   gem 'web-console', '3.0.0'
