@@ -11,6 +11,7 @@ gem 'sdoc',               '0.4.1', group: :doc
 gem 'bootstrap-sass',     '3.3.6'
 gem 'font-awesome-rails', '4.5.0'
 gem 'simple_form',        '3.2.1'
+gem 'devise',             '3.5.3'
 
 group :development do
   gem 'web-console', '3.0.0'
