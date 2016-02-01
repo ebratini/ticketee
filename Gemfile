@@ -5,7 +5,6 @@ gem 'sass-rails',         '5.0.4'
 gem 'uglifier',           '2.7.2'
 gem 'coffee-rails',       '4.1.1'
 gem 'jquery-rails',       '4.0.5'
-gem 'turbolinks',         '2.5.3'
 gem 'jbuilder',           '2.3.2'
 gem 'sdoc',               '0.4.1', group: :doc
 gem 'bootstrap-sass',     '3.3.6'
@@ -24,6 +23,11 @@ group :development, :test do
   gem 'byebug',             '8.2.1'
   gem 'spring',             '1.6.1'
   gem 'rspec-rails',        '3.4.0'
+end
+
+group :test do
   gem 'capybara',           '2.5.0'
   gem 'factory_girl_rails', '4.5.0'
+  gem 'selenium-webdriver', '2.50.0'
+  gem 'database_cleaner',   '1.5.1'
 end
