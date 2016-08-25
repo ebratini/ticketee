@@ -14,6 +14,8 @@ gem 'devise',             '3.5.3'
 gem 'pundit',             '1.0.1'
 gem 'carrierwave',        '0.10.0'
 
+gem 'searcher', github: 'radar/searcher'
+
 group :development do
   gem 'web-console', '3.0.0'
 end
