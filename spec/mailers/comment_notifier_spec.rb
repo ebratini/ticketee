@@ -24,6 +24,5 @@ RSpec.describe CommentNotifier, type: :mailer do
       expect(email_body).to include "#{commenter.email} wrote:"
       expect(email_body).to include comment.text
     end
-    
   end
 end
