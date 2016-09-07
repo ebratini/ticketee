@@ -13,6 +13,7 @@ gem 'simple_form',        '3.2.1'
 gem 'devise',             '3.5.3'
 gem 'pundit',             '1.0.1'
 gem 'carrierwave',        '0.10.0'
+gem 'fog',                '1.38.0'
 
 gem 'searcher', github: 'radar/searcher'
 
