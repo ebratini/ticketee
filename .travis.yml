@@ -2,5 +2,12 @@ language: ruby
 rvm: 2.2.2
 script: bundle exec rspec
 before_install:
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+deploy:
+  provider: heroku
+  api_key:
+    secure: L+jY747sI1afFG3awdl0rQgs8PASNcFgN2IQIxDmMXOtYE91v6HZOIIBrTgwu0qQGELJ6YNKYWnpMJhyk93zCgMqHRklaF0GV+gj3VCqK5IiIgpepegx/MThqey3THFwUJbTtVIXUOtplIlewPGhR+wR4+yA1zlgAorLk1VtdyrAgFsWQr9QMZHVHm/qIyVWn2rJZalCf/pMFK/xdrJySNDwFlXBg6cATTo8ihzu1VWKDyjNbxop946vE1m0ngX4ruwKK33lRokLutuAqny1mhimds8FrahOkJEgPPTv+WveGqKUSQ5wCf7CJackU8DRjMiuqbES0Hj1zW2tRVrhpII8r6tqibD6WXlgqtw+rx3bpED2div0MXrRZOwjDEuNchs3NGH84bZNt+EkibGCoRFpM8H6T+fO6+tbjsQ7w4c/KpoLKXwFzs+QIrWNCwfEtDpEH9nj+mMynN+1j81pAdIclRl6ikehVo/Q7JkyMwglpLsGly6lD2xrDJgaTxUEnnl3ZANtxQJo6zVtffCyHvgg2HnFqhA1cbUYvPS5DXrBW14mJDonSMvNbey+mSAkuwzKo0Q2oyggyP2Et9wJ2aiFgqfMOZUV+WENJuY3XeEROfvuGfzXKJEpFW4RHML/GlmuOW7NTKfahm222MzcjIeC7h9nOk/fJY/cQ1T1YpA=
+  app: cryptic-plains-65827
+  on:
+    repo: ebratini/ticketee
