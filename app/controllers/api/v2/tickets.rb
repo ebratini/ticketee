@@ -17,7 +17,7 @@ module API
           return TicketSerializer.new(ticket).to_json
         end
         
-        halt 404, 'The ticket you were looking for could not be found.'
+        not_found! #halt 404, 'The ticket you were looking for could not be found.'
       end
       
       private
@@ -44,6 +44,10 @@ module API
       
       def unauthenticated!
         halt 401, {error: 'Unauthenticated'}.to_json
+      end
+      
+      def not_found!
+        halt 404, 'The resource you were looking for could not be found.'
       end
     end
   end
