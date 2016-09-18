@@ -18,6 +18,7 @@ gem 'fog',                      '1.38.0'
 gem 'web-console',              '3.0.0', group: :development
 gem 'searcher',                          github: 'radar/searcher'
 gem 'active_model_serializers', '0.10.2'
+gem 'sinatra',                  '1.4.7'
 
 group :test do
   gem 'capybara',               '2.5.0'
